@@ -1,0 +1,26 @@
+{
+  "name": "learn-react-redux",
+  "version": "0.1.0",
+  "description": "Step-by-step buildup of a react/redux project",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanistheone/learn-react-redux.git"
+  },
+  "keywords": [
+    "es2015",
+    "react",
+    "redux"
+  ],
+  "author": "Ivan Savov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ivanistheone/learn-react-redux/issues"
+  },
+  "homepage": "https://github.com/ivanistheone/learn-react-redux#readme"
+}
