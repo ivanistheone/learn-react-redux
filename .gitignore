@@ -1,5 +1,11 @@
+# mac os X crap
+.DS_Store
+
+# frontend build directory
+frontend/build/
+
 # sources / inspiration
-sources
+# sources
 
 # Logs
 logs

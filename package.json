@@ -6,7 +6,9 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "NODE_ENV='production' node_modules/.bin/webpack --config webpack.config.js --bail -p",
+    "dev": "NODE_ENV='development' node_modules/.bin/webpack-dev-server --content-base frontend/build/ --inline --hot --progress",
+    "open": "open http://localhost:8080/frontend/build/"
   },
   "repository": {
     "type": "git",
@@ -22,5 +24,14 @@
   "bugs": {
     "url": "https://github.com/ivanistheone/learn-react-redux/issues"
   },
-  "homepage": "https://github.com/ivanistheone/learn-react-redux#readme"
+  "homepage": "https://github.com/ivanistheone/learn-react-redux#readme",
+  "devDependencies": {
+    "babel": "^6.3.26",
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "file-loader": "^0.8.5",
+    "webpack": "^1.12.11",
+    "webpack-dev-server": "^1.14.1"
+  }
 }
