@@ -12,9 +12,17 @@ var config = module.exports = {
         filename: '/js/bundle.js',
     },
     module: {
-        loaders: [                                                    // loaders
+        preLoaders: [
+            {                                                     // eslint code
+                test: /\.jsx$|\.js$/,
+                loader: 'eslint-loader',
+                include: path.join(__dirname, 'frontend'),
+                exclude: /bundle\.js$/
+            }
+        ],
+        loaders: [
             {
-                test: /\.js$/,
+                test: /\.js$/,                             // main loader for js
                 include: path.join(__dirname, 'frontend'),
                 loader: 'babel',
                 query: { cacheDirectory: true, presets: ['es2015'] },
